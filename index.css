@@ -517,3 +517,15 @@ footer .copyright{
     width: 100%;
     text-align: center;
 }
+
+/* media query */
+
+@media (max-width:820) {
+    
+    #navbar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
