@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"   />
     <link rel="stylesheet" href="index.css">
 </head>
+
+
 <body>
-    <section id="header">
+    <section id="header" >
         <a href="#"><img src="/img/logo.png" class="logo"></a>
 
         <div>
@@ -30,17 +32,60 @@
         </div>
     </section>
 
-<section id="shop-hero">
+    <section id="proDetails" class="section-p1">
+        <div class="single-pro-detail">
+            <img src="/img/products/f1.jpg" id="mainImg"  width="100%" alt="Image">
 
-        <h2>#stayhome</h2>
-        <p>Save more with coupons % up to 70% off!</p>
-        
+            <div class="small-img">
+                <div class="small-img-col">
+                    <img src="/img/products/f1.jpg" class="small-img1" width="100%" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="/img/products/f2.jpg" class="small-img1" width="100%" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="/img/products/f3.jpg" class="small-img1" width="100%" alt="">
+                </div>
+
+                <div class="small-img-col">
+                    <img src="/img/products/f4.jpg" class="small-img1" width="100%" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="single-pro-text">
+            <h5>Home/T-Shirt</h5>
+            <h4>Men's fashion T-Shirt</h4>
+            <h1>$130.00</h1>
+
+            <select >
+                <option >Select Size</option>
+                <option >XL</option>
+                <option >XXL</option>
+                <option >Small</option>
+                <option >Large</option>    
+            </select>
+            <input type="number" value="1">
+
+            <button>Add To Cart</button>
+
+            <h4>Product Detail</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae illo ducimus, optio suscipit repellendus ex minima ut, expedita eum natus aspernatur, eligendi at consequatur laborum dolor necessitatibus? Fugit, aperiam quo.
+            Enim quis soluta molestias temporibus, labore culpa accusantium. Magnam in error neque earum maxime corrupti ipsum accusamus impedit. Inventore aperiam itaque nisi placeat amet ullam eos labore, voluptate quos magni!
+            Excepturi tempore, ut sunt cumque dicta, quos quaerat exercitationem enim doloribus ipsam labore repellat quod neque nulla fugiat tempora? Voluptatem, at! Aliquam, velit nesciunt distinctio iure laboriosam itaque libero possimus.
+           </p>
+        </div>
     </section>
 
-<section id="product1" class="section-p1">
+    <section id="product1" class="section-p1">
+        <h2>Features Products</h2>
+        <p>Summer Collection New Modern Design</p>
         
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='singlepro.html';">
+            <div class="pro">
                 <img src="/img/products/f1.jpg" alt="">
 
                 <div class="text">
@@ -380,11 +425,6 @@
         
     </section>
 
-<section id="pagination" class="section-p1">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-</section>
 
 <section id="newsLetter" class="section-p1 section-m1">
     <div class="newstext">
@@ -397,6 +437,7 @@
         <button class="normal">Sign Up</button>
     </div>
 </section>
+
 
 <footer class="section-p1">
     <div class="col">
@@ -457,6 +498,36 @@
 
    </footer>
 
-   <script src="index.js"></script>
+   <script>
+    var mainImg=document.getElementById("mainImg")
+    var smallImg=document.getElementsByClassName("small-img1")
 
+    smallImg[0].onclick= function()
+    {
+        mainImg.src = smallImg[0].src;
+    }
+
+    smallImg[1].onclick= function()
+    {
+        mainImg.src = smallImg[1].src;
+    }
+
+    smallImg[2].onclick= function()
+    {
+        mainImg.src = smallImg[2].src;
+    }
+
+    smallImg[3].onclick= function()
+    {
+        mainImg.src = smallImg[3].src;
+    }
+   </script>
+
+<script src="index.js"></script>
 </body>
+
+
+
+  
+    
+  

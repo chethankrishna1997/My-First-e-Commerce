@@ -51,6 +51,8 @@ body{
     width: 100%;
 }
 
+/* home page */
+
 #header{
     display: flex;
     align-items: center;
@@ -700,3 +702,147 @@ footer .copyright{
 
    
 }
+
+
+
+/* shop page */
+
+#shop-hero{
+    background-image: url("/img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#shop-hero h2,
+#shop-hero p{
+    color: #e3e6f3;
+
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #33916d;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+
+}
+
+@media (max-width:820px){
+
+    #shop-hero {
+        width: 100%;
+        height: 20vh;
+        
+    }
+
+    #product1 .pro-container {
+        
+        padding: 20px 10px;
+        
+    }
+
+    
+}
+
+
+/* singlepro */
+
+#proDetails{
+    display: flex;
+    
+    
+}
+
+#proDetails .single-pro-detail{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-pro-text{
+    width: 50%;
+    margin-top: 50px;
+}
+
+
+.single-pro-text h4,
+.single-pro-text h1,
+select{
+    margin-top: 20px;
+}
+
+
+.single-pro-text select{
+    display: block;
+    width: 100px;
+    height: 25px;
+    border-radius: 3px;
+    
+}
+
+.single-pro-text input{
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.single-pro-text input,select:focus{
+    outline: none;
+}
+
+.single-pro-text button{
+    width: 120px;
+    height: 40px;
+    margin: 20px 20px;
+    border-radius: 4px;
+    background-color: #088178;
+    color: white;
+    border: none;
+
+}
+
+.single-pro-text p{
+    line-height: 25px;
+}
+
+
+@media(max-width:414px){
+
+    #proDetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #proDetails .single-pro-detail {
+        width: 100%;
+       
+    }
+
+    .single-pro-text {
+        width: 100%;
+        
+    }
+}
+
