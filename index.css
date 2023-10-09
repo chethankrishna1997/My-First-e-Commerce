@@ -957,3 +957,161 @@ select{
 
    
 }
+
+
+/* about page */
+
+#about-hero{
+    background-image: url("/img/about/banner.png");
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#about-hero h2,
+#about-hero p{
+    color: white;
+}
+
+#about-head{
+    
+    display: flex;
+    align-items: center;
+}
+
+#about-head p,
+#about-head abbr{
+    line-height: 25px;
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+    margin-right: 30px;
+}
+
+#about-head marquee{
+    background-color: #918b8b;
+    font-weight: 600;
+}
+
+#about-app h1{
+    text-align: center;
+}
+
+#about-app .video{
+    display: flex;
+    justify-content: center;
+}
+
+#about-app video{
+    width: 70%;
+    height: 100%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+@media (max-width:414px){
+
+    #about-head {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        height: auto;
+        margin: 0px 0 30PX 0;
+        
+    }
+
+    #about-app video {
+        width: 100%;
+    }
+}
+
+
+/* contact page */
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#contact-details .detail{
+    width: 40%;
+}
+
+#contact-details .detail span{
+   font-weight: 600;
+   
+}
+
+#contact-details .detail h1{
+    margin: 30px 0 ;
+}
+
+#contact-details .detail h3{
+    margin: 30px 0 ;
+}
+
+#contact-details li{
+    display: flex;
+    list-style: none;
+}
+
+#contact-details li i{
+    font-size: 16px;
+    padding: 20px;
+}
+
+#contact-details li p{
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
+}
+
+#contact-details .map{
+    width: 55%;
+    height: 500px;
+}
+
+#contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:414px)
+{
+    #contact-details {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .section-p1 {
+        padding: 40px 20px;
+    }
+
+    #contact-details .detail {
+        width: 100%;
+    }
+
+    #contact-details li {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #contact-details .map {
+        width: 100%;
+        height: 500px;
+    }
+}
